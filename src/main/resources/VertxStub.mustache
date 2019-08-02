@@ -63,7 +63,7 @@ public final class {{className}} {
         @java.lang.Deprecated
            {{/deprecated}}
         public {{#isManyOutput}}io.vertx.core.streams.ReadStream{{/isManyOutput}}{{^isManyOutput}}io.vertx.core.Future{{/isManyOutput}}<{{outputType}}> {{methodName}}({{inputType}} request) {
-           return io.vertx.grpc.stub.ClientCalls.{{vertxCallsMethodName}}(io.vertx.core.Promise.succeededPromise(request), delegateStub::{{methodName}});
+           return io.vertx.grpc.stub.ClientCalls.{{vertxCallsMethodName}}(io.vertx.core.Promise.succeededPromise(request).future(), delegateStub::{{methodName}});
         }
 
         {{/unaryRequestMethods}}
