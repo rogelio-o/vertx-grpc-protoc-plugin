@@ -5,6 +5,9 @@ import io.vertx.grpc.VertxServer;
 import io.vertx.grpc.VertxServerBuilder;
 import io.vertx.grpc.examples.VertxChatGrpc;
 
+/**
+ * @author Rogelio Orts
+ */
 public class MainVerticle extends AbstractVerticle {
 
     @Override

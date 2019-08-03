@@ -7,6 +7,9 @@ import io.vertx.core.streams.impl.InboundBuffer;
 
 import java.util.List;
 
+/**
+ * @author Rogelio Orts
+ */
 public class IterableReadStream<T> implements ReadStream<T> {
 
   private final InboundBuffer<T> queue;

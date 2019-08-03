@@ -13,6 +13,9 @@ import io.vertx.grpc.examples.VertxChatGrpc;
 import java.time.Instant;
 import java.util.UUID;
 
+/**
+ * @author Rogelio Orts
+ */
 public class MainVerticle extends AbstractVerticle {
 
   @Override

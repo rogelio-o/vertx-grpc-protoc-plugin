@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author Rogelio Orts
+ */
 public class ChatImpl extends VertxChatGrpc.ChatImplBase {
 
   private final List<ChatProto.ChatMessage> db = Collections.synchronizedList(new ArrayList<>());

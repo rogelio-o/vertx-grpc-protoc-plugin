@@ -14,6 +14,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author Rogelio Orts
+ */
 public class VertxGrpcGenerator extends Generator {
 
   private static final int SERVICE_NUMBER_OF_PATHS = 2;
