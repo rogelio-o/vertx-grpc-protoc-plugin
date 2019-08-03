@@ -30,7 +30,7 @@ public class VertxGrpcGenerator extends Generator {
 
   @Override
   public List<PluginProtos.CodeGeneratorResponse.File> generateFiles(PluginProtos.CodeGeneratorRequest request) throws GeneratorException {
-    final ProtoTypeMap typeMap = ProtoTypeMap.of(request.getProtoFileList());
+    ProtoTypeMap typeMap = ProtoTypeMap.of(request.getProtoFileList());
 
     List<DescriptorProtos.FileDescriptorProto> protosToGenerate = request.getProtoFileList().stream()
       .filter(protoFile -> request.getFileToGenerateList().contains(protoFile.getName()))
